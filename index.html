@@ -14,22 +14,33 @@
       <form id="form">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+            minlength="3"
+            maxlength="100"
+          />
         </div>
         <!-- Phone Number -->
         <div class="form-group">
           <label for="phone">Phone Number</label>
           <input
+            required
             type="tel"
             name="phone"
             id="phone"
             placeholder="555-555-5555"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           />
         </div>
         <!-- Email Address -->
         <div class="form-group">
           <label for="email">Email Address</label>
           <input
+            required
             type="email"
             name="email"
             id="email"
@@ -40,6 +51,7 @@
         <div class="form-group">
           <label for="website">Website URL</label>
           <input
+            required
             type="url"
             name="website"
             id="website"
@@ -54,16 +66,21 @@
             name="pwd"
             id="pwd"
             placeholder="Create password (Min. 8 characters)"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="please include at least 1 lowercase, 1 uppercase, 1 number"
           />
         </div>
         <!-- confirm pwd -->
         <div class="form-group">
           <label for="pwd-confirm">Confirm Password</label>
           <input
+            required
             type="password"
             name="pwd-confirm"
             id="pwd-confirm"
             placeholder="Confirm Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
         </div>
         <button type="submit">Register</button>
