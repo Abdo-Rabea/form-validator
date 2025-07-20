@@ -31,12 +31,6 @@ function passwordMissMatchMode() {
 
 // Stores form values (aka: just printing it into console.)
 function storeFormValue() {
-  //   const nameEl = document.getElementById("name");
-  // const phoneEl = document.getElementById("phone");
-  // const emailEl = document.getElementById("email");
-  // const websiteEl = document.getElementById("website");
-  // const pwdEl = document.getElementById("pwd");
-  // const pwdConfirmEl = document.getElementById("pwd-confirm");
   const data = {
     name: nameEl.value,
     phone: form.phone.value,
