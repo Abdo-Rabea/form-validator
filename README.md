@@ -43,6 +43,7 @@ If the **Confirm Password** field doesn’t match, the user is notified immediat
 ## 📸 Preview
 
 [demo](https://abdo-rabea.github.io/form-validator)
+
 ![screen](./screen.png)
 
 ---
